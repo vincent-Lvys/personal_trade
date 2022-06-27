@@ -1,0 +1,36 @@
+﻿server:
+  port: 8080
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 401598613@qq.com
+    password: engyybbjkjescaaf
+    port: 587
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+        debug: true
+
+  redis:
+    host: 192.168.233.129
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1
+        max-idle: 0
+    connect-timeout: 30000
+
+wx:
+  access:
+    token:
+      corpid: wwd32d99c2c8228e1f
+      corpsecret: O11RyWwnXJ3gLX4kp9Nn9wekwfuDM3hN_VwRYIzilF8
+  message:
+    agentid: 1000002
+    msgtype: text
+
+
