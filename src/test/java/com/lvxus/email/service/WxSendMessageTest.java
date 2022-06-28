@@ -1,6 +1,7 @@
-package com.lvxus.email.test;
+package com.lvxus.email.service;
 
 import com.lvxus.email.domain.TextMessage;
+import com.lvxus.email.domain.WxMessage;
 import com.lvxus.email.service.impl.WxMessageSendServiceImpl;
 import lombok.SneakyThrows;
 import org.junit.Test;
@@ -22,9 +23,11 @@ public class WxSendMessageTest {
 
         TextMessage.Text text = new TextMessage.Text();
         text.setContent("吕永森");
-        TextMessage message = new TextMessage();
+        TextMessage textMessage = new TextMessage();
+        textMessage.setText(text);
+        WxMessage message = new WxMessage();
         message.setTouser("LvYongSen");
-        message.setText(text);
+        message.setTextMessage(textMessage);
         wxMessageSendService.sendMessage(message);
     }
 }

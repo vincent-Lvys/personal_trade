@@ -1,4 +1,4 @@
-package com.lvxus.email.test;
+package com.lvxus.email.utils;
 
 import org.junit.jupiter.api.Test;
 

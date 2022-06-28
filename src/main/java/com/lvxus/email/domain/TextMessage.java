@@ -6,7 +6,7 @@ import lombok.Data;
  * @author lvxus
  */
 @Data
-public class TextMessage extends BaseMessage{
+public class TextMessage {
 
     private Text text;
     private Integer safe;

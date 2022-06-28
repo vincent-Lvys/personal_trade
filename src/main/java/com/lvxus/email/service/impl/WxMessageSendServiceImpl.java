@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
 import com.lvxus.email.domain.AccessToken;
 import com.lvxus.email.domain.TextMessage;
+import com.lvxus.email.domain.WxMessage;
 import com.lvxus.email.service.BaseMessageSendService;
 import com.lvxus.email.utils.HttpUtils;
 import lombok.SneakyThrows;
@@ -61,7 +62,7 @@ public class WxMessageSendServiceImpl implements BaseMessageSendService {
 
     @SneakyThrows
     @Override
-    public void sendMessage(TextMessage message) {
+    public void sendMessage(WxMessage message) {
         message.setAgentid(agentId);
         message.setMsgtype(msgtype);
         String url = String.format("https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=%s",getAccessToken().getAccessToken());

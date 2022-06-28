@@ -1,11 +1,20 @@
 package com.lvxus.email.service;
 
 import com.lvxus.email.domain.AccessToken;
-import com.lvxus.email.domain.TextMessage;
+import com.lvxus.email.domain.WxMessage;
 
+/**
+ * @author lvxus
+ */
 public interface BaseMessageSendService {
 
+    /**
+     * @return
+     */
     public AccessToken getAccessToken();
 
-    public void sendMessage(TextMessage message);
+    /**
+     * @param message
+     */
+    public void sendMessage(WxMessage message);
 }

@@ -3,11 +3,14 @@ package com.lvxus.email;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author lvxus
+ */
 @SpringBootApplication
-public class EmailApplication {
+public class PersonalTradeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmailApplication.class, args);
+        SpringApplication.run(PersonalTradeApplication.class, args);
     }
 
 }
