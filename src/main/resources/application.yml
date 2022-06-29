@@ -1,5 +1,7 @@
 ﻿server:
   port: 8080
+  servlet:
+    context-path: /pltrade
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -25,7 +27,6 @@ spring:
         smtp:
           socketFactoryClass: javax.net.ssl.SSLSocketFactory
         debug: true
-
   redis:
     host: 192.168.233.129
     port: 6379
@@ -36,6 +37,7 @@ spring:
         max-wait: 1
         max-idle: 0
     connect-timeout: 30000
+
 
 wx:
   access:

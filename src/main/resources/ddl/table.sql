@@ -68,3 +68,20 @@ create table convertible_bond
 create index ix_convertible_bond_index
     on convertible_bond (`index`);
 
+
+-- auto-generated definition
+create table stock_basic
+(
+    ts_code    varchar(20) null,
+    trade_date datetime    null,
+    open       varchar(20) null,
+    high       varchar(20) null,
+    low        varchar(20) null,
+    close      varchar(20) null,
+    pre_close  varchar(20) null,
+    `change`   varchar(20) null,
+    pct_chg    varchar(20) null,
+    vol        varchar(20) null,
+    amount     varchar(20) null
+);
+
